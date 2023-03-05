@@ -1,0 +1,144 @@
+// Variable
+$primary-color: rgb(178, 217, 230);
+$secondary-color: rgb(178, 198, 230);
+$base-color: #242527;
+$side-space: 100px;
+
+// Common
+body {
+    width: 100%;
+    font-family: "Jost";
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 64px;
+    color: #111;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 54px;
+    color: #111;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    color: white;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    transition: 0.3s ease;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.06);
+        // box-shadow: 4px 4px 16px rgba($color: #222, $alpha: 0.4);
+    }
+    &:active {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}
+
+// header
+header {
+    height: 96px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $base-color;
+    padding: 20px $side-space;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    #logo {
+        font-size: 28px;
+        font-family: 'Courier New', Courier, monospace;
+        a {
+            text-decoration: none;
+            color: rgb(178, 217, 230);
+        }
+        // position: relative;
+        // &-a {
+        //     position: absolute;
+        //     right: 0;
+        //     font-size: 10px;
+        // }
+    }
+    #navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            padding: 0 16px;
+            position: relative;
+            a {
+                text-decoration: none;
+                font-weight: 600;
+                color: $secondary-color;
+                transition: 0.3s ease;
+                &:hover {
+                    cursor: pointer;
+                    color: $primary-color;
+                    font-size: 20px;
+                    &::after {
+                        content: "";
+                        width: 40%;
+                        height: 2px;
+                        background-color: $primary-color;
+                        position: absolute;
+                        bottom: -4px;
+                        left: 16px;
+                    }
+                }
+                &.active {
+                    color: $primary-color;
+                    &::after {
+                        content: "";
+                        width: 40%;
+                        height: 2px;
+                        background-color: $primary-color;
+                        position: absolute;
+                        bottom: -4px;
+                        left: 16px;
+                    }
+                }
+                &:active {
+                    font-size: 16px;
+                }
+                i {
+                    vertical-align: text-bottom;
+                }
+            }
+            span {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                margin-left: 8px;
+                text-align: center;
+                background-color:$primary-color;
+                border-radius: 50%;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// main
+main {
+    padding: 0 $side-space;
+    #cards {
+        .card {
+            width: 18rem;
+            
+            box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.04);
+        }
+    }
+}

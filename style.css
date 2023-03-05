@@ -1,0 +1,162 @@
+body {
+  width: 100%;
+  font-family: "Jost";
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 64px;
+  color: #111;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 54px;
+  color: #111;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  color: white;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+}
+
+button:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header {
+  height: 96px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #242527;
+  padding: 20px 100px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+header #logo {
+  font-size: 28px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+header #logo a {
+  text-decoration: none;
+  color: #b2d9e6;
+}
+
+header #navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header #navbar li {
+  padding: 0 16px;
+  position: relative;
+}
+
+header #navbar li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #b2c6e6;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+header #navbar li a:hover {
+  cursor: pointer;
+  color: #b2d9e6;
+  font-size: 20px;
+}
+
+header #navbar li a:hover::after {
+  content: "";
+  width: 40%;
+  height: 2px;
+  background-color: #b2d9e6;
+  position: absolute;
+  bottom: -4px;
+  left: 16px;
+}
+
+header #navbar li a.active {
+  color: #b2d9e6;
+}
+
+header #navbar li a.active::after {
+  content: "";
+  width: 40%;
+  height: 2px;
+  background-color: #b2d9e6;
+  position: absolute;
+  bottom: -4px;
+  left: 16px;
+}
+
+header #navbar li a:active {
+  font-size: 16px;
+}
+
+header #navbar li a i {
+  vertical-align: text-bottom;
+}
+
+header #navbar li span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  text-align: center;
+  background-color: #b2d9e6;
+  border-radius: 50%;
+  color: #fff;
+}
+
+main {
+  padding: 0 100px;
+}
+
+main #cards .card {
+  width: 18rem;
+  -webkit-box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.04);
+          box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.04);
+}
+/*# sourceMappingURL=style.css.map */
