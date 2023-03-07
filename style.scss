@@ -63,7 +63,7 @@ header {
         font-family: 'Courier New', Courier, monospace;
         a {
             text-decoration: none;
-            color: rgb(178, 217, 230);
+            color: #fff;
         }
         // position: relative;
         // &-a {
@@ -137,7 +137,7 @@ main {
     #cards {
         .card {
             width: 18rem;
-            
+
             box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.04);
         }
     }
